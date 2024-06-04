@@ -26,7 +26,7 @@
                  
                    User Table
 
-                   <button style="align:right; background-color:blue; color:white; width:10%; margin:0;" href="{{url('employee')}}" type="submit" class="btn btn-primary">Add</button>
+                   <button style="align:right; background-color:blue; color:white; width:10%; margin:0;" href="{{url('home')}}" type="submit" class="btn btn-primary">Add</button>
 
 
                    
