@@ -16,17 +16,11 @@ class employeecontroller extends Controller
     public function store(Request $request)
     {
        $employees = [
-           'firstname' => $request->input('firstname'),
-           'lastname' => $request->input('lastname'),
-           'middlename' => $request->input('middlename'),
-           'address' => $request->input('address'),
-           'country' => $request->input('country'),
-           'state'=> $request->input('state'),
-           'city'=> $request->input('city'),
-           'zip'=> $request->input('zip'),
-           'birth' => $request->input('birth'), 
-           'hired' => $request->input('hired'),
-           'department' => $request->input('department'),
+           'name' => $request->input('name'),
+           'email' => $request->input('email'),
+           'password' => $request->input('password'),
+           'conpass' => $request->input('conpass'),
+
         
        ];
    
@@ -46,17 +40,11 @@ class employeecontroller extends Controller
     }
     public function update(Request $request,int $id){
         employeemodel::find($id)->update([
-            'firstname'=>$request->firstname,
-            'middlename'=>$request->middlename,
-            'lastname'=>$request->lastname,
-            'address'=>$request->address,
-            'country'=>$request->country,
-            'state'=>$request->state,
-            'city'=>$request->city,
-            'zip'=>$request->zip,   
-            'birth'=>$request->birth,
-            'hired'=>$request->hired    ,
-            'department'=>$request->department,
+            'name'=>$request->name,
+            'email'=>$request->email,
+            'password'=>$request->password,
+            'conpass'=>$request->conpass,
+   
            
            ]);
             return redirect()->back();

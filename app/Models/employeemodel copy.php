@@ -11,6 +11,6 @@ class employeemodel extends Model
     protected $table = 'grasyatb';
     protected $primaryKey = 'id';
     protected $fillable = [
-        'firstname','lastname','middlename','address','country','state','city','zip','birth','hired','department'
+        'name','email','password','conpass'
     ];
 }
